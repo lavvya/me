@@ -191,7 +191,7 @@ public static boolean byee(String userResp){
 
 public static boolean yess(String input){
         for (String option : yes){
-                if (input.equals(option)){
+                if (input.contains(option)){
                         return true;
                 }
         }
@@ -200,7 +200,7 @@ public static boolean yess(String input){
 
 public static boolean noo(String input){
         for (String option : no){
-                if (input.equals(option)){
+                if (input.contains(option)){
                         return true;
                 }
         }
