@@ -10,7 +10,7 @@ static String[] allResp = new String[100];
         static String[] flavors = {"chocolate", "vanilla", "orange", "strawberry", "pineapple", "peppermint"};
         static String[] sizeOptions = {"large", "medium", "small"};
         static String[] cupOrCone = {"cup", "cone"};
-        static String[] napkins = {"yes", "no", "yeah", "yep", "mhm", "yea", "right", "ok","no", "nope", "nuh-uh", "nah"};
+        static String[] napkins = {"yes", "no", "yeah", "yep", "mhm", "yea", "right", "ok","no", "nope", "nuh-uh", "nah", "ye"};
 
         static String[] yes = {"yes", "yeah", "yep", "mhm", "yea", "right", "ok"};
         static String[] no = {"no", "nope", "nuh-uh", "nah"};
@@ -19,6 +19,10 @@ static String[] allResp = new String[100];
 
 
         public static void menu(String userResp){
+                if(noo(userResp)){
+                        System.err.println(ConsoleColors.BLACK + "Then see you later, 'cause I can't help you! Buh-bye." + ConsoleColors.RESET);
+                }
+                
                 if(byee(userResp)){
                         System.err.println(ConsoleColors.BLACK + "Thank you for your time! Have a nice day!" + ConsoleColors.RESET);
                         System.exit(0);

@@ -10,7 +10,7 @@ public class App
 
        public static void main(String[] args)
        {
-        System.err.println(ConsoleColors.BLACK + "Hi! Welcome to Meadowlark Dairy here at Pleasanton! I hope you are doing well!" + ConsoleColors.RESET);
+        System.err.println(ConsoleColors.BLACK + "\n Hi! Welcome to Meadowlark Dairy here at Pleasanton! I hope you are doing well!" + ConsoleColors.RESET);
         System.err.println(ConsoleColors.BLACK + "If, at any point, you wish to leave, please type in \"quit\", \"exit\", or \"goodbye\"." + ConsoleColors.RESET);
         System.out.println(ConsoleColors.RED + "Please refrain from typing responses with more than one word!" + ConsoleColors.RESET);
         Scanner in = new Scanner(System.in);
