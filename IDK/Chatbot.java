@@ -32,6 +32,10 @@ static String[] allResp = new String[100];
                         System.err.println(ConsoleColors.BLACK + botErrorResp[y] + ConsoleColors.RESET);
                         Scanner in = new Scanner (System.in);
                         userResp = in.nextLine().toLowerCase();
+                        if(byee(userResp)){
+                                System.err.println(ConsoleColors.BLACK + "Thank you for your time! Have a nice day!" + ConsoleColors.RESET);
+                                System.exit(0);
+                        }
                         if(userResp.indexOf("please")>0){
                                 userResp = userResp.substring(0, userResp.indexOf("please"));
                          }
@@ -52,6 +56,10 @@ static String[] allResp = new String[100];
                 System.err.println(ConsoleColors.BLACK + botErrorResp[y] + ConsoleColors.RESET);
                 Scanner in = new Scanner (System.in);
                 userResp = in.nextLine().toLowerCase();
+                if(byee(userResp)){
+                        System.err.println(ConsoleColors.BLACK + "Thank you for your time! Have a nice day!" + ConsoleColors.RESET);
+                        System.exit(0);
+                }
                 if(userResp.indexOf("please")>0){
                         userResp = userResp.substring(0, userResp.indexOf("please"));
                  }
@@ -79,6 +87,10 @@ static String[] allResp = new String[100];
                 System.err.println(ConsoleColors.BLACK + botErrorSize[b] + ConsoleColors.RESET);
                 Scanner in = new Scanner (System.in);
                 userRespSize = in.nextLine().toLowerCase();
+                if(byee(userRespSize)){
+                        System.err.println(ConsoleColors.BLACK + "Thank you for your time! Have a nice day!" + ConsoleColors.RESET);
+                        System.exit(0);
+                }
                 if(userRespSize.indexOf("please")>0){
                         userRespSize = userRespSize.substring(0, userRespSize.indexOf("please"));
                  }
@@ -128,6 +140,10 @@ static String[] allResp = new String[100];
                 System.out.println(ConsoleColors.BLACK + botErrorCont[b] + ConsoleColors.RESET);
                 Scanner in = new Scanner (System.in);
                 userRespContainer = in.nextLine().toLowerCase();
+                if(byee(userRespContainer)){
+                        System.err.println(ConsoleColors.BLACK + "Thank you for your time! Have a nice day!" + ConsoleColors.RESET);
+                        System.exit(0);
+                }
                 if(userRespContainer.indexOf("please")>0){
                         userRespContainer = userRespContainer.substring(0, userRespContainer.indexOf("please"));
                  }
@@ -161,9 +177,11 @@ public static void fullOrder(){
                         System.out.println(" " + allResp[i] + ".");
                 }
         }
-        System.out.println(ConsoleColors.BLACK + "Your total price is: $" + price + "." + ConsoleColors.RESET);
+        System.out.println(ConsoleColors.BLACK + "\n Your total price is: $" + price + "." + ConsoleColors.RESET);
         System.out.println(ConsoleColors.BLACK + "Thank you for your purchase! Have a nice day!" + ConsoleColors.RESET);
 }
+
+//frq: 5-6 qs, math.random, new class, array lists, objects (person.getName or whatever)
 
 public static boolean error(String input, String[] option) {
         int hi = 0; 
