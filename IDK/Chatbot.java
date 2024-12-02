@@ -170,7 +170,7 @@ public static boolean error(String input, String[] option) {
         String[] words = input.split(" "); 
         for (String word : words) { 
             for (String x : option) { 
-                if (word.equals(x)) { 
+                if (word.contains(x)) { 
                     hi++; 
 
                 }
